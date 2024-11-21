@@ -1,0 +1,17 @@
+#######
+
+POST http://localhost:3000/middleware
+Content-Type: application/json
+
+{
+  "n": 10
+}
+
+#######
+
+POST http://localhost:3000/middleware/sem
+Content-Type: application/json
+
+{
+  "n": 10
+}

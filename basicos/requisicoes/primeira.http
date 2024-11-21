@@ -1,0 +1,32 @@
+GET http://localhost:3000/filmes
+
+#######
+GET http://localhost:3000/filmes/0
+
+#######
+
+POST http://localhost:3000/filmes
+Content-Type: application/json
+
+{
+  "titulo": "Novo filmes",
+  "diretor": "Novo Diretor",
+  "ano": 2015,
+  "protagonista": "Eggsy"
+}
+
+#######
+GET http://localhost:3000/filmes?invertido=true
+
+#######
+DELETE  http://localhost:3000/filmes/00
+
+#######
+PUT http://localhost:3000/filmes/0
+Content-Type: application/json
+
+{
+  "titulo": "Filme editado",
+  "diretor": "Diretor editado",
+  "ano": 1998
+}
