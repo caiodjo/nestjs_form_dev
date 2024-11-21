@@ -1,0 +1,12 @@
+POST http://localhost:3000/pipes/preco
+Content-Type: application/json
+
+{
+  "preco": 10.50
+}
+
+###
+GET http://localhost:3000/pipes/email?email=alo
+
+###
+GET http://localhost:3000/pipes/email?email=alo@mail.com
