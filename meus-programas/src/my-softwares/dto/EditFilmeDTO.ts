@@ -1,21 +1,27 @@
-import { IsOptional } from 'class-validator';
+import { IsBoolean, IsOptional, IsString } from 'class-validator';
 
 export class EditFilmeDTO {
+  @IsString()
   @IsOptional()
-  name: string;
+  nome: string;
 
+  @IsString()
   @IsOptional()
   site: string;
 
+  @IsString()
   @IsOptional()
-  description: string;
+  descricao: string;
 
   @IsOptional()
+  @IsBoolean()
   gratuito: string;
 
+  @IsString()
   @IsOptional()
   categoria: string;
 
+  @IsString()
   @IsOptional()
   comentarios: string;
 }

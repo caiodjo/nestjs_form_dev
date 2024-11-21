@@ -1,21 +1,27 @@
-import { IsNotEmpty } from "class-validator";
+import { IsBoolean, IsNotEmpty, IsString } from "class-validator";
 
 export class CreateFilmeDTO{
-  @IsNotEmpty()
+  @IsString({message:"nome"})
+  @IsNotEmpty({message:"nome"})
   nome: string;
 
-  @IsNotEmpty()
+  @IsString({message:"site"})
+  @IsNotEmpty({message:"site"})
   site: string;
 
-  @IsNotEmpty()
+  @IsString({message:"descricao"})
+  @IsNotEmpty({message:"descricao"})
   descricao: string;
 
-  @IsNotEmpty()
+  @IsBoolean({message:"gratuito"})
+  @IsNotEmpty({message:"gratuito"})
   gratuito: string;
 
-  @IsNotEmpty()
+  @IsString({message:"categoria"})
+  @IsNotEmpty({message:"categoria"})
   categoria: string;
 
+  @IsString()
   @IsNotEmpty()
   comentarios: string;
 }
