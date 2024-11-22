@@ -1,1 +1,1 @@
-GET http://localhost:3000/interceptors
+GET http://localhost:3000/interceptors?admin=true

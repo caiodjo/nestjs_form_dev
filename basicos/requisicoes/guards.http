@@ -1,0 +1,6 @@
+GET http://localhost:3000/guards
+
+####
+GET http://localhost:3000/guards?admin=true
+
+####

@@ -1,0 +1,7 @@
+GET http://localhost:3000/erros
+####
+GET http://localhost:3000/erros/http
+#####
+GET http://localhost:3000/erros/personalizado
+####
+GET http://localhost:3000/erros/http/personalizado
